@@ -32,6 +32,4 @@ class Api::V1::UsersController < ApplicationController
       render json: { error: "Invalid name" }, status: :unauthorized
     end
   end
-
-  
 end
