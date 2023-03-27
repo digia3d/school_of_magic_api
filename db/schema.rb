@@ -35,6 +35,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_135129) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "house_id", null: false
+    t.index ["house_id"], name: "index_characters_on_house_id"
   end
 
   create_table "houses", force: :cascade do |t|
@@ -46,12 +48,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_27_135129) do
   create_table "wands", force: :cascade do |t|
     t.string "wood"
     t.string "core"
-    t.string "length"
+    t.float "length"
     t.bigint "character_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["character_id"], name: "index_wands_on_character_id"
   end
 
+  add_foreign_key "characters", "houses"
   add_foreign_key "wands", "characters"
 end
