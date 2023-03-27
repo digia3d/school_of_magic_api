@@ -1,3 +1,4 @@
+if !ActiveRecord::Base.connection.table_exists?(:characters)
 hufflepuff = House.find_or_create_by(name: 'Hufflepuff')
 
 diggory = Character.find_or_create_by_with_wand(
