@@ -1,0 +1,2 @@
+class Wand < ApplicationRecord
+end
