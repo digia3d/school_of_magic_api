@@ -8,3 +8,4 @@
 require_relative 'seeds_data/gryffindor_seeds'
 require_relative 'seeds_data/slytherin_seeds'
 require_relative 'seeds_data/ravenclaw_seeds'
+require_relative 'seeds_data/hufflepuff_seeds'
