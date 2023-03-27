@@ -1,1 +1,1 @@
-# school_of_magic_api
+# School of Magic-API
