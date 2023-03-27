@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WandTest < ActiveSupport::TestCase
+class CharactersControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
