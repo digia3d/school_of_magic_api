@@ -10,8 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_27_135129) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "characters", force: :cascade do |t|
+    t.string "name"
+    t.string "alternate_names"
+    t.string "species"
+    t.string "gender"
+    t.string "house"
+    t.string "dateOfBirth"
+    t.integer "yearOfBirth"
+    t.string "blood_status"
+    t.string "ancestry"
+    t.string "eyeColour"
+    t.string "hairColour"
+    t.jsonb "wand"
+    t.string "patronus"
+    t.boolean "hogwartsStudent"
+    t.boolean "hogwartsStaff"
+    t.string "actor"
+    t.boolean "alive"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "house_id", null: false
+    t.index ["house_id"], name: "index_characters_on_house_id"
+  end
+
+  create_table "houses", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "wands", force: :cascade do |t|
+    t.string "wood"
+    t.string "core"
+    t.float "length"
+    t.bigint "character_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_wands_on_character_id"
+  end
+
+  add_foreign_key "characters", "houses"
+  add_foreign_key "wands", "characters"
 end
