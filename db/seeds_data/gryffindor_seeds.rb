@@ -1,4 +1,3 @@
-if !ActiveRecord::Base.connection.table_exists?(:characters)
 gryffindor = House.find_or_create_by(name: "Gryffindor")
 
 harry_potter = Character.find_or_create_by_with_wand(
