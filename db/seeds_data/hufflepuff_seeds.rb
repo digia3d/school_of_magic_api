@@ -16,7 +16,7 @@ diggory = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Robert Pattinson', 
     alive: false, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/9/90/Cedric_Diggory_Profile.png/revision/latest/scale-to-width-down/1000?cb=20161123045136',
+    image: 'https://media.harrypotterfanzone.com/cedric-diggory-goblet-of-fire-third-task-portrait-3-1050x0-c-default.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'ash', 
@@ -41,7 +41,7 @@ abbott = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Charlotte Skeoch', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/b/b7/Harry-potter-goblet-of-fire-hannah.jpg/revision/latest?cb=20170731215859',
+    image: 'https://images5.fanpop.com/image/photos/28100000/Hannah-Abbott-hufflepuff-28198154-213-338.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'almond tree', 
@@ -66,7 +66,7 @@ bones = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Eleanor Columbus', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/7/77/Susan01.png/revision/latest?cb=20210523074531',
+    image: 'https://images5.fanpop.com/image/photos/28100000/Susan-Bones-hufflepuff-28198177-251-291.png',
     house: hufflepuff,
     wand_attributes: {
         wood: 'oak', 
@@ -76,27 +76,27 @@ bones = Character.find_or_create_by_with_wand(
 )
 
 e_r_l = Character.find_or_create_by_with_wand(
-    name: 'Edward Remus Lupin',
+    name: 'Zacharias Smith',
     alternate_names: '', 
-    species: 'human(Metamorphmagus)', 
+    species: 'human', 
     gender: 'male', 
-    dateOfBirth: '11-04-1998',
-    yearOfBirth: 1998,
+    dateOfBirth: '16-08-1980',
+    yearOfBirth: 1980,
     blood_status: 'half-blood', 
-    ancestry: 'Howell and Tonks', 
-    eyeColour: 'brown', 
-    hairColour: 'blue', 
-    patronus: 'wolf', 
+    ancestry: 'Smith family', 
+    eyeColour: 'blue', 
+    hairColour: 'blond', 
+    patronus: 'Non-corporeal', 
     hogwartsStudent: false, 
     hogwartsStaff: true, 
-    actor: 'Gary Waldhorn', 
+    actor: 'Nick Shirm', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotterfanon/images/d/d4/Teddy_%28WCHB%29.JPG/revision/latest?cb=20190627212132',
+    image: 'https://images5.fanpop.com/image/photos/28100000/Zacharias-Smith-hufflepuff-28198083-186-523.jpg',
     house: hufflepuff,
     wand_attributes: {
-        wood: 'alder', 
-        core: 'unicorn hair', 
-        length: 13.0
+        wood: '', 
+        core: '', 
+        length: ''
     }
 )
 
@@ -116,7 +116,7 @@ finch_fletchley = Character.find_or_create_by_with_wand(
     hogwartsStaff: true, 
     actor: 'Edward Randell', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/1/16/Justin_Finch-Fletchley_%28McGonagall%27s_Class%29_%281%29.png/revision/latest?cb=20180308172742',
+    image: 'https://images5.fanpop.com/image/photos/28100000/Justin-Finch-Fletchley-hufflepuff-28198108-250-296.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'cherry', 
@@ -141,7 +141,7 @@ helga_hufflepuff = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Katie McGrath', 
     alive: false, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/d/d7/Helga_Hufflepuff.jpg/revision/latest?cb=20140615154415',
+    image: 'https://static.wikia.nocookie.net/harrypotter/images/d/d7/Helga_Hufflepuff.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'oak', 
@@ -166,7 +166,7 @@ sprout = Character.find_or_create_by_with_wand(
     hogwartsStaff: true, 
     actor: 'Miriam Margolyes', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/6/6e/Pomona_Sprout_DHF2.jpg/revision/latest?cb=20170730031333',
+    image: 'https://static.wikia.nocookie.net/harrypotter/images/6/6e/Pomona_Sprout_DHF2.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: '', 
@@ -191,7 +191,7 @@ nymphadora = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Natalia Tena', 
     alive: false, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/c/c8/Nymphadora_Tonks_DH_promo_headshot_.jpg/revision/latest/scale-to-width-down/1000?cb=20161119222048',
+    image: 'https://static.wikia.nocookie.net/harrypotter/images/c/c8/Nymphadora_Tonks_DH_promo_headshot_.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'almond', 
@@ -216,7 +216,7 @@ scamander = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Eddie Redmayne', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/3/36/Newton_Scamander_Profile_crop.png/revision/latest?cb=20190609204955',
+    image: 'https://static.wikia.nocookie.net/harrypotter/images/3/36/Newton_Scamander_Profile_crop.png',
     house: hufflepuff,
     wand_attributes: {
         wood: 'simple wood',
@@ -241,7 +241,7 @@ theseus = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Callum Turner', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/3/32/Theseus_Scamander_SODM_2.jpeg/revision/latest/scale-to-width-down/1000?cb=20220928151504',
+    image: 'https://i.pinimg.com/564x/f9/43/ca/f943ca04a592e0b457028de273ebc1d2.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: '', 
