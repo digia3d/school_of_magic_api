@@ -41,7 +41,7 @@ hermione = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Emma Watson',
   alive: true,
-  image: 'https://static.wikia.nocookie.net/harrypotter/images/3/34/Hermione_Granger.jpg/revision/latest/scale-to-width-down/1000?cb=20210522145306',
+  image: 'https://media.harrypotterfanzone.com/hermione-granger-chamber-of-secrets-portrait-3-1050x0-c-default.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'vine',
@@ -165,7 +165,7 @@ dumbledore = Character.find_or_create_by_with_wand(
   hogwartsStaff: true, 
   actor: 'Michael Gambon', 
   alive: false, 
-  image: 'https://static.wikia.nocookie.net/harrypotter/images/4/40/Albus_Dumbledore_%28HBP_promo%29_3.jpg/revision/latest/scale-to-width-down/350?cb=20150822232849',
+  image: 'https://images2.fanpop.com/images/photos/7700000/Albus-Dumbledore-albus-dumbledore-7749866-400-533.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'elder', 
@@ -190,7 +190,7 @@ hagrid = Character.find_or_create_by_with_wand(
   hogwartsStaff: true, 
   actor: 'Robbie Coltrane', 
   alive: true, 
-  image: 'https://static.wikia.nocookie.net/harrypotter/images/f/fe/Rubeus_Hagrid.png/revision/latest/scale-to-width-down/350?cb=20221014184333',
+  image: 'https://media.harrypotterfanzone.com/rubeus-hagrid-prisoner-of-azkaban-portrait.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'oak', 
