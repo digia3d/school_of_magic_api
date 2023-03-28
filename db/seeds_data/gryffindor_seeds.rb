@@ -190,7 +190,7 @@ hagrid = Character.find_or_create_by_with_wand(
   hogwartsStaff: true, 
   actor: 'Robbie Coltrane', 
   alive: true, 
-  image: 'https://media.harrypotterfanzone.com/rubeus-hagrid-prisoner-of-azkaban-portrait.jpg',
+  image: 'https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'oak', 
