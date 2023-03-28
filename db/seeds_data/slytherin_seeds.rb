@@ -1,4 +1,3 @@
-if !ActiveRecord::Base.connection.table_exists?(:characters)
 slytherin = House.find_or_create_by(name: 'Slytherin')
 
 draco_malfoy = Character.find_or_create_by_with_wand(
