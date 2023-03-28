@@ -1,4 +1,3 @@
-if !ActiveRecord::Base.connection.table_exists?(:characters)
 ravenclaw = House.find_or_create_by(name: "Ravenclaw")
 
 luna = Character.find_or_create_by_with_wand(
