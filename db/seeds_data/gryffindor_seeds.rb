@@ -41,7 +41,7 @@ hermione = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Emma Watson',
   alive: true,
-  image: 'https://media.harrypotterfanzone.com/hermione-granger-prisoner-of-azkaban-portrait-7.jpg',
+  image: 'https://wallpaper.dog/large/200083.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'vine',
