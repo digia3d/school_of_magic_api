@@ -41,7 +41,7 @@ hermione = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Emma Watson',
   alive: true,
-  image: 'https://lh3.googleusercontent.com/pw/AMWts8BADzZZ8HZ8M84mE68tmxD1Xt7nNkxr4PNrTei1-Qykzk8UkyVHTKe2NzZqia7rO2sim5fi5eaxY6AIHZCErPGrKUVi8NKp2TKGMNGWMcvhd8vA5WJ8L7_LsD5qMfbr84fHntcF10ND3nCmMCRr-zpK=w300-h400-s-no?authuser=0',
+  image: 'https://wallpaper.dog/large/200083.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'vine',
