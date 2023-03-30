@@ -237,7 +237,7 @@ voldemort = Character.find_or_create_by_with_wand(
   hogwartsStaff: false, 
   actor: 'Ralph Fiennes', 
   alive: false, 
-  image: 'https://static.wikia.nocookie.net/harrypotter/images/a/aa/Voldemort_Headshot_DHP1.png/revision/latest/scale-to-width-down/1000?cb=20161203031453',
+  image: 'https://i.pinimg.com/564x/2e/b0/33/2eb0330f7b9c9cc814ff4dc5f92b17a2.jpg',
   house: slytherin,
   wand_attributes: {
       wood: 'yew', 

@@ -16,7 +16,7 @@ luna = Character.find_or_create_by_with_wand(
     hogwartsStaff: false, 
     actor: 'Evanna Lynch', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/e/ed/Luna_Lovegood.jpg/revision/latest/scale-to-width-down/1000?cb=20160902165706',
+    image: 'https://i.pinimg.com/564x/aa/4b/00/aa4b0017c0a4430a6f41b6ab1c134559.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'acacia', 
@@ -141,7 +141,7 @@ lockhart = Character.find_or_create_by_with_wand(
     hogwartsStaff: true, 
     actor: 'Kenneth Branagh', 
     alive: true, 
-    image: 'https://static.wikia.nocookie.net/harrypotter/images/7/7b/Gilderoy_Lockhart_promotional_image_COSF.jpg/revision/latest/scale-to-width-down/1000?cb=20221104114009',
+    image: 'https://i.pinimg.com/564x/e0/8b/ee/e08beeb839c818345096ae82996513f3.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'cherry', 
