@@ -12,7 +12,7 @@ module SchoolOfMagicApi
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
-    config.asset_host = ENV.fetch('ASSET_HOST', '')
+    config.assets.enabled = false
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
