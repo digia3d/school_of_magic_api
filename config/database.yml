@@ -81,7 +81,8 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: school_of_magic_api_production
   username: school_of_magic_api
   password: <%= ENV["SCHOOL_OF_MAGIC_API_DATABASE_PASSWORD"] %>
-  url: <%= ENV['DATABASE_URL'] %>
+  
