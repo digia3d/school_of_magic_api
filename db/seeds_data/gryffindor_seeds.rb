@@ -41,7 +41,7 @@ hermione = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Emma Watson',
   alive: true,
-  image: 'https://i.ibb.co/z5qFQDd/4188a92fdafced47ddcbe10272732dbf.jpg',
+  image: 'https://i.ibb.co/zJ4pDrw/hermione.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'vine',
@@ -165,7 +165,7 @@ dumbledore = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Michael Gambon',
   alive: false,
-  image: 'https://i.pinimg.com/564x/cc/31/c5/cc31c588fb7f68f943223704d2e397cc.jpg',
+  image: 'https://i.ibb.co/FqnKNY7/dumbledore.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'elder',
@@ -190,7 +190,7 @@ hagrid = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Robbie Coltrane',
   alive: true,
-  image: 'https://i.pinimg.com/564x/e9/61/95/e96195664b8f96259e0cc574be714bfe.jpg',
+  image: 'https://i.ibb.co/X7RM0zz/hagrid.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'oak',
