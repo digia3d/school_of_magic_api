@@ -1,0 +1,13 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/json-2.6.3/ext/json
+/home/alex/.rbenv/versions/3.1.2/bin/ruby -I /home/alex/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20260109-3698-950fak.rb extconf.rb
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/json-2.6.3/ext/json
+make DESTDIR\= clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/json-2.6.3/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/json-2.6.3/ext/json
+make DESTDIR\= install

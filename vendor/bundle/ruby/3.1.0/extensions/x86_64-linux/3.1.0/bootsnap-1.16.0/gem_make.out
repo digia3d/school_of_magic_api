@@ -1,0 +1,15 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+/home/alex/.rbenv/versions/3.1.2/bin/ruby -I /home/alex/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20260109-3698-uokc9h.rb extconf.rb
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20260109-3698-k5t6wz/bootsnap

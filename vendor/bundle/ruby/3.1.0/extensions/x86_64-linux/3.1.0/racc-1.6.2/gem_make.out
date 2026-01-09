@@ -1,0 +1,17 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+/home/alex/.rbenv/versions/3.1.2/bin/ruby -I /home/alex/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20260109-8177-6n5haw.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260109-8177-whw0lp/racc

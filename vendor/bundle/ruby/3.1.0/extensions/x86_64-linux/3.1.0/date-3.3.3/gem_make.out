@@ -1,0 +1,21 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+/home/alex/.rbenv/versions/3.1.2/bin/ruby -I /home/alex/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20260109-3698-l2x0s2.rb extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\= clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\=
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20260109-3698-4luy35

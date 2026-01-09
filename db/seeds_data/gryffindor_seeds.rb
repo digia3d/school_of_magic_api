@@ -16,7 +16,7 @@ harry_potter = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Daniel Radcliffe',
   alive: true,
-  image: 'https://ik.imagekit.io/hpapi/harry.jpg',
+  image: '/images/gryffindor/harry.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'holly',
@@ -41,7 +41,7 @@ hermione = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Emma Watson',
   alive: true,
-  image: 'https://i.ibb.co/zJ4pDrw/hermione.jpg',
+  image: '/images/gryffindor/hermione.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'vine',
@@ -66,7 +66,7 @@ ron = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Rupert Grint',
   alive: true,
-  image: 'https://toppng.com/uploads/preview/transparent-ron-weasley-ron-weasley-11563043110lotjv3syex.png',
+  image: '/images/gryffindor/ron.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'willow',
@@ -91,7 +91,7 @@ ginny = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Bonnie Wright',
   alive: true,
-  image: 'https://media.harrypotterfanzone.com/ginny-weasley-order-of-the-phoenix-portrait-7-1050x0-c-default.jpg',
+  image: '/images/gryffindor/ginny.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'yew',
@@ -115,7 +115,7 @@ neville = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Matthew Lewis',
   alive: true,
-  image: 'https://comicvine.gamespot.com/a/uploads/scale_medium/11/111746/4296088-neville%20longbottom.jpg',
+  image: '/images/gryffindor/neville.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'cherry',
@@ -140,7 +140,7 @@ sirius_black = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Gary Oldman',
   alive: false,
-  image: 'https://idigitalcitizen.files.wordpress.com/2009/09/sirius-black-portrait.jpg',
+  image: '/images/gryffindor/sirius.jpg',
   house: gryffindor,
   wand_attributes:{
       wood: 'resin',
@@ -165,7 +165,7 @@ dumbledore = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Michael Gambon',
   alive: false,
-  image: 'https://i.ibb.co/FqnKNY7/dumbledore.jpg',
+  image: '/images/gryffindor/dumbledore.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'elder',
@@ -190,7 +190,7 @@ hagrid = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Robbie Coltrane',
   alive: true,
-  image: 'https://i.ibb.co/X7RM0zz/hagrid.jpg',
+  image: '/images/gryffindor/hagrid.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'oak',
@@ -215,7 +215,7 @@ mcgonagall = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Maggie Smith',
   alive: true,
-  image: 'https://upload.wikimedia.org/wikipedia/en/e/ea/McGonagall_%28screenshot%29.jpg',
+  image: '/images/gryffindor/mcgonagall.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'fir',
@@ -240,7 +240,7 @@ lupin = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'David Thewlis',
   alive: true,
-  image: 'http://hp-api.herokuapp.com/images/lupin.jpg',
+  image: '/images/gryffindor/lupin.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'cypress',
