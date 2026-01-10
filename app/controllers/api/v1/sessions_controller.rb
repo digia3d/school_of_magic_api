@@ -1,4 +1,13 @@
 class Api::V1::SessionsController < ApplicationController
+  def show
+    if session[:user_id]
+      user = User.find(session[:user_id])
+      render json: { user_id: user.id, user_name: user.name }, status: :ok
+    else
+      render json: { error: 'You are not logged in' }, status: :unauthorized
+    end
+  end
+
   def create
     user = User.find_or_create_by(name: params[:name])
     if user.persisted?
@@ -6,15 +15,6 @@ class Api::V1::SessionsController < ApplicationController
       render json: { message: "Welcome, #{user.name}!" }, status: :ok
     else
       render json: { error: user.errors.full_messages.join(', ') }, status: :unprocessable_entity
-    end
-  end
-
-  def show
-    if session[:user_id]
-      user = User.find(session[:user_id])
-      render json: { user_id: user.id, user_name: user.name }, status: :ok
-    else
-      render json: { error: 'You are not logged in' }, status: :unauthorized
     end
   end
 
