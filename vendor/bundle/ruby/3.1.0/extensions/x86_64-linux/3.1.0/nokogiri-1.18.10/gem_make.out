@@ -1,0 +1,81 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/nokogiri-1.18.10/ext/nokogiri
+/home/alex/.rbenv/versions/3.1.2/bin/ruby -I /home/alex/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20260111-8038-8w6kkb.rb extconf.rb --use-system-libraries
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... yes
+checking for whether -O2 is accepted as CFLAGS... yes
+checking for whether -g is accepted as CFLAGS... yes
+checking for whether -Winline is accepted as CFLAGS... yes
+checking for whether -Wmissing-noreturn is accepted as CFLAGS... yes
+checking for whether -Wconversion is accepted as CFLAGS... no
+Building nokogiri using system libraries.
+checking for gzdopen() in -lz... yes
+checking for xmlParseDoc() in -lxml2... no
+checking for xmlParseDoc() in -llibxml2... no
+checking for libxml-2.0 using `pkg_config`... yes: ["-I/usr/include/libxml2 ", "", "-lxml2"]
+checking for xmlParseDoc() in -lxml2... yes
+checking for xsltParseStylesheetDoc() in -lxslt... yes
+checking for exsltFuncRegister() in -lexslt... yes
+WARNING: libxml2 version 2.12.0 or later is highly recommended, but proceeding anyway.
+Using mini_portile version 2.8.9
+---------- IMPORTANT NOTICE ----------
+Building Nokogiri with a packaged version of libgumbo-1.0.0-nokogiri.
+Configuration options: --enable-shared --disable-static
+Copying gumbo-parser files into tmp/x86_64-pc-linux-gnu/ports/libgumbo/1.0.0-nokogiri/gumbo-parser...
+Running 'compile' for libgumbo 1.0.0-nokogiri... OK
+Activating libgumbo 1.0.0-nokogiri (from ports/x86_64-linux/libgumbo/1.0.0-nokogiri)...
+checking for whether -I/home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/nokogiri-1.18.10/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/include is accepted as CPPFLAGS... yes
+checking for gumbo_parse_with_options() in nokogiri_gumbo.h... yes
+checking for xmlCtxtSetOptions()... no
+checking for xmlCtxtGetOptions()... no
+checking for xmlSwitchEncodingName()... no
+checking for rb_category_warning()... yes
+checking for whether -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"libgumbo:1.0.0-nokogiri\"" is accepted as CPPFLAGS... yes
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/nokogiri-1.18.10/ext/nokogiri
+make DESTDIR\= clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/nokogiri-1.18.10/ext/nokogiri
+make DESTDIR\=
+compiling gumbo.c
+compiling html4_document.c
+compiling html4_element_description.c
+compiling html4_entity_lookup.c
+compiling html4_sax_parser.c
+compiling html4_sax_parser_context.c
+compiling html4_sax_push_parser.c
+compiling libxml2_polyfill.c
+compiling nokogiri.c
+compiling test_global_handlers.c
+compiling xml_attr.c
+compiling xml_attribute_decl.c
+compiling xml_cdata.c
+compiling xml_comment.c
+compiling xml_document.c
+compiling xml_document_fragment.c
+compiling xml_dtd.c
+compiling xml_element_content.c
+compiling xml_element_decl.c
+compiling xml_encoding_handler.c
+compiling xml_entity_decl.c
+compiling xml_entity_reference.c
+compiling xml_namespace.c
+compiling xml_node.c
+compiling xml_node_set.c
+compiling xml_processing_instruction.c
+compiling xml_reader.c
+compiling xml_relax_ng.c
+compiling xml_sax_parser.c
+compiling xml_sax_parser_context.c
+compiling xml_sax_push_parser.c
+compiling xml_schema.c
+compiling xml_syntax_error.c
+compiling xml_text.c
+compiling xml_xpath_context.c
+compiling xslt_stylesheet.c
+linking shared-object nokogiri/nokogiri.so
+Cleaning files only used during build.
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/nokogiri-1.18.10/ext/nokogiri
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20260111-8038-1xc5rn/nokogiri
