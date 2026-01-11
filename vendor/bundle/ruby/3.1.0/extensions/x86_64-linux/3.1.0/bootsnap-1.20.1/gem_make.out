@@ -1,0 +1,20 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.20.1/ext/bootsnap
+/home/alex/.rbenv/versions/3.1.7/bin/ruby -I /home/alex/.rbenv/versions/3.1.7/lib/ruby/3.1.0 extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for fstatat() in sys/stat.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260111-31294-8xuyhv sitelibdir\=./.gem.20260111-31294-8xuyhv clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260111-31294-8xuyhv sitelibdir\=./.gem.20260111-31294-8xuyhv
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260111-31294-8xuyhv sitelibdir\=./.gem.20260111-31294-8xuyhv install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20260111-31294-8xuyhv/bootsnap
