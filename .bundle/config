@@ -1,5 +1,5 @@
 ---
+BUNDLE_FORCE_RUBY_PLATFORM: "true"
 BUNDLE_FORCE_RUBY_PLATFORM__="1"
-BUNDLE_BUILD__NOKOGIRI="--use-system-libraries"
-
+BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
 

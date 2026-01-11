@@ -16,7 +16,7 @@ harry_potter = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Daniel Radcliffe',
   alive: true,
-  image: 'images/gryffindor/harry.jpg',
+  image: 'harry.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'holly',
@@ -41,7 +41,7 @@ hermione = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Emma Watson',
   alive: true,
-  image: '/images/gryffindor/hermione.jpg',
+  image: 'hermione.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'vine',
@@ -66,7 +66,7 @@ ron = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Rupert Grint',
   alive: true,
-  image: '/images/gryffindor/ron.jpg',
+  image: 'ron.jpg',
   house: gryffindor,
   wand_attributes: {
     wood: 'willow',
@@ -91,7 +91,7 @@ ginny = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Bonnie Wright',
   alive: true,
-  image: '/images/gryffindor/ginny.jpg',
+  image: 'ginny.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'yew',
@@ -115,7 +115,7 @@ neville = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Matthew Lewis',
   alive: true,
-  image: '/images/gryffindor/neville.jpg',
+  image: 'neville.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'cherry',
@@ -140,7 +140,7 @@ sirius_black = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Gary Oldman',
   alive: false,
-  image: '/images/gryffindor/sirius.jpg',
+  image: 'sirius.jpg',
   house: gryffindor,
   wand_attributes:{
       wood: 'resin',
@@ -165,7 +165,7 @@ dumbledore = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Michael Gambon',
   alive: false,
-  image: '/images/gryffindor/dumbledore.jpg',
+  image: 'dumbledore.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'elder',
@@ -190,7 +190,7 @@ hagrid = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Robbie Coltrane',
   alive: true,
-  image: '/images/gryffindor/hagrid.jpg',
+  image: 'hagrid.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'oak',
@@ -215,7 +215,7 @@ mcgonagall = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Maggie Smith',
   alive: true,
-  image: '/images/gryffindor/mcgonagall.jpg',
+  image: 'mcgonagall.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'fir',
@@ -240,7 +240,7 @@ lupin = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'David Thewlis',
   alive: true,
-  image: '/images/gryffindor/lupin.jpg',
+  image: 'lupin.jpg',
   house: gryffindor,
   wand_attributes: {
       wood: 'cypress',

@@ -16,7 +16,7 @@ luna = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Evanna Lynch',
     alive: true,
-    image: '/images/ravenclaw/luna.jpg',
+    image: 'luna.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'acacia',
@@ -41,7 +41,7 @@ cho = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Katie Leung',
     alive: true,
-    image: '/images/ravenclaw/cho.jpg',
+    image: 'cho.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: '',
@@ -66,7 +66,7 @@ padma = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Afshan Azad',
     alive: true,
-    image: '/images/ravenclaw/padma.jpg',
+    image: 'padma.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: '',
@@ -91,7 +91,7 @@ myrtle = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Shirley Henderson',
     alive: false,
-    image: '/images/ravenclaw/myrtle.jpg',
+    image: 'myrtle.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: '',
@@ -116,7 +116,7 @@ quirrell = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Ian Hart',
     alive: false,
-    image: '/images/ravenclaw/quirrell.jpg',
+    image: 'quirrell.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'alder',
@@ -141,7 +141,7 @@ lockhart = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Kenneth Branagh',
     alive: true,
-    image: '/images/ravenclaw/lockhart.jpg',
+    image: 'lockhart.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'cherry',
@@ -166,7 +166,7 @@ xenophilius = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Rhys Ifans',
     alive: true,
-    image: '/images/ravenclaw/xenophilius.jpg',
+    image: 'xenophilius.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: '',
@@ -191,7 +191,7 @@ grey_lady = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Nina Young',
     alive: false,
-    image: '/images/ravenclaw/grey_lady.jpg',
+    image: 'grey_lady.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: '',
@@ -216,7 +216,7 @@ flitwick = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Warwick Davis',
     alive: true,
-    image: '/images/ravenclaw/flitwick.jpg',
+    image: 'flitwick.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'ash',
@@ -241,7 +241,7 @@ trelawney = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Emma Thompson',
     alive: true,
-    image: '/images/ravenclaw/trelawney.jpg',
+    image: 'trelawney.jpg',
     house: ravenclaw,
     wand_attributes: {
         wood: 'hazel',

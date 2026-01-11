@@ -12,6 +12,12 @@ class Character < ApplicationRecord
   end
 
   validates :name, presence: true
+  def image_url
+    return nil unless image.present? && house.present?
+
+    folder = house.name.downcase
+    "/images/#{folder}/#{image}"
+  end
 
   private
 
