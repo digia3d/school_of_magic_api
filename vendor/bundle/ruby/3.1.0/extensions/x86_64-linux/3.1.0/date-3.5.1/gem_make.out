@@ -1,0 +1,21 @@
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.5.1/ext/date
+/home/alex/.rbenv/versions/3.1.7/bin/ruby -I /home/alex/.rbenv/versions/3.1.7/lib/ruby/3.1.0 extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.5.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20260111-31294-kuvn4i sitelibdir\=./.gem.20260111-31294-kuvn4i clean
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.5.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20260111-31294-kuvn4i sitelibdir\=./.gem.20260111-31294-kuvn4i
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/alex/Desktop/school_of_magic_api/vendor/bundle/ruby/3.1.0/gems/date-3.5.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20260111-31294-kuvn4i sitelibdir\=./.gem.20260111-31294-kuvn4i install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20260111-31294-kuvn4i

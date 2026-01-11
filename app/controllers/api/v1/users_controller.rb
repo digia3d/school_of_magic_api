@@ -4,6 +4,15 @@ class Api::V1::UsersController < ApplicationController
     render json: { users: }, status: :ok
   end
 
+  def show
+    if session[:user_id]
+      user = User.find(session[:user_id])
+      render json: { user_id: user.id, user_name: user.name }, status: :ok
+    else
+      render json: { error: 'You are not logged in' }, status: :unauthorized
+    end
+  end
+
   def create
     user = User.new(name: params[:name])
 
@@ -11,15 +20,6 @@ class Api::V1::UsersController < ApplicationController
       render json: { message: "Welcome, #{user.name}!" }, status: :created
     else
       render json: { error: user.errors.full_messages.join(', ') }, status: :unprocessable_entity
-    end
-  end
-
-  def show
-    if session[:user_id]
-      user = User.find(session[:user_id])
-      render json: { user_id: user.id, user_name: user.name }, status: :ok
-    else
-      render json: { error: 'You are not logged in' }, status: :unauthorized
     end
   end
 

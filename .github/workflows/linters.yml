@@ -10,21 +10,27 @@ jobs:
     name: Rubocop
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.x
-      - name: Setup Rubocop
+          ruby-version: 3.1
+          bundler-cache: true
+      - name: Install Rubocop
         run: |
-          gem install --no-document rubocop -v '>= 1.0, < 2.0' # https://docs.rubocop.org/en/stable/installation/
-          [ -f .rubocop.yml ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.rubocop.yml
-      - name: Rubocop Report
-        run: rubocop --color
+          gem install --no-document rubocop -v '>= 1.0, < 2.0'
+          gem install --no-document rubocop-rails -v '>= 2.0, < 3.0'
+      - name: Run Rubocop
+        run: bundle exec rubocop --color
+
   nodechecker:
-    name: node_modules checker
+    name: Node Modules Checker
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Check node_modules existence
         run: |
-          if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo -e "\e[1;32mYou can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
+          if [ -d "node_modules/" ]; then
+            echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from GitHub and try again."
+            echo -e "\e[1;32mYou can set up a .gitignore file with this folder included to prevent this."
+            exit 1
+          fi
