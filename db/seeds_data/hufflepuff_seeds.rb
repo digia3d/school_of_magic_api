@@ -16,7 +16,7 @@ diggory = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Robert Pattinson',
     alive: false,
-    image: '/images/hufflepuff/diggory.jpg',
+    image: 'diggory.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'ash',
@@ -41,7 +41,7 @@ abbott = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Charlotte Skeoch',
     alive: true,
-    image: '/images/hufflepuff/abbott.jpg',
+    image: 'abbott.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'almond tree',
@@ -66,7 +66,7 @@ bones = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Eleanor Columbus',
     alive: true,
-    image: '/images/hufflepuff/bones.jpg',
+    image: 'bones.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'oak',
@@ -91,7 +91,7 @@ e_r_l = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Nick Shirm',
     alive: true,
-    image: '/images/hufflepuff/e_r_l.jpg',
+    image: 'e_r_l.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: '',
@@ -116,7 +116,7 @@ finch_fletchley = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Edward Randell',
     alive: true,
-    image: '/images/hufflepuff/finch.jpg',
+    image: 'finch.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'cherry',
@@ -141,7 +141,7 @@ helga_hufflepuff = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Katie McGrath',
     alive: false,
-    image: '/images/hufflepuff/helga_hufflepuff.jpg',
+    image: 'helga_hufflepuff.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'oak',
@@ -166,7 +166,7 @@ sprout = Character.find_or_create_by_with_wand(
     hogwartsStaff: true,
     actor: 'Miriam Margolyes',
     alive: true,
-    image: '/images/hufflepuff/sprout.jpg',
+    image: 'sprout.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: '',
@@ -191,7 +191,7 @@ nymphadora = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Natalia Tena',
     alive: false,
-    image: '/images/hufflepuff/nymphadora.jpg',
+    image: 'nymphadora.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'almond',
@@ -216,7 +216,7 @@ scamander = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Eddie Redmayne',
     alive: true,
-    image: '/images/hufflepuff/scamander.jpg',
+    image: 'scamander.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: 'simple wood',
@@ -241,7 +241,7 @@ theseus = Character.find_or_create_by_with_wand(
     hogwartsStaff: false,
     actor: 'Callum Turner',
     alive: true,
-    image: '/images/hufflepuff/theseus.jpg',
+    image: 'theseus.jpg',
     house: hufflepuff,
     wand_attributes: {
         wood: '',

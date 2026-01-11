@@ -2,28 +2,30 @@ class Api::V1::CharactersController < ApplicationController
   before_action :set_character, only: [:show]
 
   def index
-    characters = if params[:house_id].to_i.zero?
-                   Character.all
-                 else
-                   Character.where(house_id: params[:house_id])
-                 end
+    characters = params[:house_id].to_i.zero? ? Character.all : Character.where(house_id: params[:house_id])
 
-    render json: characters.as_json(
-      only: %i[id name alternate_names species gender house dateOfBirth yearOfBirth ancestry eyeColour
-               hairColour patronus hogwartsStudent hogwartsStaff actor alive image],
-      include: { wand: { only: %i[wood core length] },
-                 house: { only: [:name] } }
-    )
+    render json: characters.map { |char|
+      char.as_json(
+        only: %i[id name alternate_names species gender dateOfBirth yearOfBirth ancestry eyeColour
+                 hairColour patronus hogwartsStudent hogwartsStaff actor alive],
+        include: {
+          wand: { only: %i[wood core length] },
+          house: { only: [:name] }
+        }
+      ).merge(image_url: char.image_url) # <-- dodajemo punu putanju slike
+    }
   end
 
   def show
     character = Character.find(params[:id])
     render json: character.as_json(
-      only: %i[id name alternate_names species gender house dateOfBirth yearOfBirth ancestry eyeColour
-               hairColour patronus hogwartsStudent hogwartsStaff actor alive image],
-      include: { wand: { only: %i[wood core length] },
-                 house: { only: [:name] } }
-    )
+      only: %i[id name alternate_names species gender dateOfBirth yearOfBirth ancestry eyeColour
+               hairColour patronus hogwartsStudent hogwartsStaff actor alive],
+      include: {
+        wand: { only: %i[wood core length] },
+        house: { only: [:name] }
+      }
+    ).merge(image_url: character.image_url) # <-- pun putanja
   end
 
   def create
