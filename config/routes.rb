@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: proc { [200, {}, ['School of Magic API is running 🪄']] }
+    
   namespace :api do
     namespace :v1 do
       # Users routes
