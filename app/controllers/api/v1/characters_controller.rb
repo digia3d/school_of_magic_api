@@ -1,9 +1,9 @@
 class Api::V1::CharactersController < ApplicationController
-  before_action :set_character, only: [:show, :houses]
+  before_action :set_character, only: %i[show houses]
 
   # GET /api/v1/characters
   def index
-    characters = Character.all.includes(:wand, :house)
+    characters = Character.includes(:wand, :house)
 
     render json: characters.map { |char|
       char.as_json(

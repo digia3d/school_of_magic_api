@@ -1,15 +1,15 @@
 class Api::V1::HousesController < ApplicationController
-  before_action :set_house, only: [:show, :characters]
+  before_action :set_house, only: %i[show characters]
 
   # GET /api/v1/houses
   def index
     houses = House.all
-    render json: houses.as_json(only: [:id, :name])
+    render json: houses.as_json(only: %i[id name])
   end
 
   # GET /api/v1/houses/:id
   def show
-    render json: @house.as_json(only: [:id, :name])
+    render json: @house.as_json(only: %i[id name])
   end
 
   # GET /api/v1/houses/:id/characters
