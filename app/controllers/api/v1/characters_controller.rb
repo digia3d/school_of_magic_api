@@ -42,10 +42,28 @@ class Api::V1::CharactersController < ApplicationController
     end
   end
 
-  # GET /api/v1/characters/:id/houses
-  def houses
-    render json: @character.house.as_json(only: %i[id name])
-  end
+  # GET /api/v1/houses/:house_name/characters
+def by_house
+  house = House.find_by(id: params[:house_id])
+
+  return render json: { error: 'House not found' }, status: :not_found if house.nil?
+
+  characters = Character.where(house_id: house.id)
+
+  render json: characters.map { |char|
+    char.as_json(
+      only: %i[
+        id name species gender dateOfBirth yearOfBirth ancestry
+        eyeColour hairColour patronus actor alive
+      ],
+      include: {
+        wand: { only: %i[wood core length] },
+        house: { only: [:name] }
+      }
+    ).merge(image_url: char.image_url)
+  }
+end
+
 
   private
 

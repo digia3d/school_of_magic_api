@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
       # Houses
       resources :houses, only: [:index, :show] do
-        # Characters for a specific house
-        get 'characters', to: 'houses#characters', on: :member
+        # GET /api/v1/houses/:house_id/characters
+        get 'characters', to: 'characters#by_house'
       end
 
       # Characters
@@ -20,3 +20,4 @@ Rails.application.routes.draw do
     end
   end
 end
+
