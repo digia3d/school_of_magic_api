@@ -1,37 +1,33 @@
 class Api::V1::HousesController < ApplicationController
-  before_action :set_house, only: %i[show characters]
+  before_action :set_house, only: [:show, :characters]
 
+  # GET /api/v1/houses
   def index
-    @houses = House.includes(:characters).all
-    render json: @houses.as_json(
-      only: %i[id name],
-      include: { characters: { only: %i[id name] } }
-    )
+    houses = House.all
+    render json: houses.as_json(only: [:id, :name])
   end
 
+  # GET /api/v1/houses/:id
   def show
-    render json: @house.as_json(
-      only: %i[id name],
-      include: { characters: { only: %i[id name] } }
-    )
+    render json: @house.as_json(only: [:id, :name])
   end
 
+  # GET /api/v1/houses/:id/characters
   def characters
-    @characters = Character.where(house_id: @house.id)
-    render json: @characters.as_json(
-      only: %i[id name alternate_names species gender house dateOfBirth yearOfBirth ancestry eyeColour
-               hairColour patronus hogwartsStudent hogwartsStaff actor alive image],
-      include: { wand: { only: %i[wood core length] },
-                 house: { only: [:name] } }
-    )
+    characters = @house.characters.includes(:wand)
+    render json: characters.map { |char|
+      char.as_json(
+        only: %i[id name alternate_names species gender house dateOfBirth yearOfBirth ancestry eyeColour
+                 hairColour patronus hogwartsStudent hogwartsStaff actor alive],
+        include: { wand: { only: %i[wood core length] }, house: { only: [:name] } }
+      ).merge(image_url: char.image) # ovde koristimo novu putanju slike
+    }
   end
 
   private
 
   def set_house
-    id = Integer(params[:id])
-    @house = House.find(id)
-  rescue ArgumentError, ActiveRecord::RecordNotFound
-    render json: { error: 'House not found' }, status: :not_found
+    @house = House.find_by(id: params[:id])
+    render json: { error: 'House not found' }, status: :not_found if @house.nil?
   end
 end
