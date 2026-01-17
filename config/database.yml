@@ -24,6 +24,11 @@ default: &default
 development:
   <<: *default
   database: school_of_magic_api_development
+  username: school_of_magic_api
+  password: '05062312'
+  host: 127.0.0.1
+
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
