@@ -1,3 +1,5 @@
+host = "https://school-of-magic-api.onrender.com/images/slytherin"
+
 slytherin = House.find_or_create_by(name: 'Slytherin')
 
 draco_malfoy = Character.find_or_create_by_with_wand(
@@ -16,7 +18,7 @@ draco_malfoy = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Tom Felton',
   alive: true,
-  image: 'draco.jpg',
+  image_url: "#{host}/draco.jpg",
   house: slytherin,
   wand_attributes: {
     wood: 'hawthorn',
@@ -41,7 +43,7 @@ crabbe = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Jamie Waylett',
   alive: false,
-  image: 'crabbe.jpg',
+  image_url: "#{host}/crabbe.jpg",
   house: slytherin,
   wand_attributes: {
       wood: '',
@@ -66,7 +68,7 @@ goyle = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Josh Herdman',
   alive: true,
-  image: 'goyle.jpg',
+  image_url: "#{host}/goyle.jpg",
   house: slytherin,
   wand_attributes: {
       wood: '',
@@ -91,7 +93,7 @@ snape = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Alan Rickman',
   alive: false,
-  image: 'snape.jpg',
+  image_url: "#{host}/snape.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'ebony',
@@ -116,7 +118,7 @@ horace = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Jim Broadbent',
   alive: true,
-  image: 'horace.jpg',
+  image_url: "#{host}/horace.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'cedar',
@@ -140,7 +142,8 @@ lucius = Character.find_or_create_by_with_wand(
   hogwartsStudent: false,
   hogwartsStaff: false,
   actor: 'Jason Isaacs',
-  alive: true, image: 'lucius.jpg',
+  alive: true,
+  image_url: "#{host}/lucius.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'elm',
@@ -164,7 +167,7 @@ narcissa_malfoy = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Helen McCrory',
   alive: false,
-  image: 'narcissa.jpg',
+  image_url: "#{host}/narcissa.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'elm',
@@ -188,7 +191,7 @@ bellatrix = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Helena Bonham Carter',
   alive: false,
-  image: 'bellatrix.jpg',
+  image_url: "#{host}/bellatrix.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'walnut',
@@ -212,7 +215,7 @@ umbridge = Character.find_or_create_by_with_wand(
   hogwartsStaff: true,
   actor: 'Imelda Staunton',
   alive: true,
-  image: 'umbridge.jpg',
+  image_url: "#{host}/umbridge.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'birch',
@@ -237,7 +240,7 @@ voldemort = Character.find_or_create_by_with_wand(
   hogwartsStaff: false,
   actor: 'Ralph Fiennes',
   alive: false,
-  image: 'voldemort.jpg',
+  image_url: "#{host}/voldemort.jpg",
   house: slytherin,
   wand_attributes: {
       wood: 'yew',
