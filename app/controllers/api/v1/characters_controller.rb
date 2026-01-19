@@ -13,7 +13,7 @@ class Api::V1::CharactersController < ApplicationController
           wand: { only: %i[wood core length] },
           house: { only: [:name] }
         }
-      ).merge(image_url: char.image)
+      ).merge(image_url: char.image_url)
     }
   end
 
@@ -26,7 +26,7 @@ class Api::V1::CharactersController < ApplicationController
         wand: { only: %i[wood core length] },
         house: { only: [:name] }
       }
-    ).merge(image_url: @character.image)
+    ).merge(image_url: @character.image_url)
   end
 
   # POST /api/v1/characters
